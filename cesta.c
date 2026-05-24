@@ -4,13 +4,13 @@ int main(void) {
     
     int adultos;
     int idosos;
-    int criancas_e_adolecentes;
+    int criancas_e_adolescentes;
     int criancas_menores;
 
     // Pontos de alimentacao
     float pontos_adultos = 1.5;
     float pontos_idosos = 1.0;
-    float pontos_criancas_e_adolecentes = 0.8;
+    float pontos_criancas_e_adolescentes = 0.8;
     float pontos_criancas_menores = 0.3;
 
     int diabetico;
@@ -31,7 +31,7 @@ int main(void) {
     printf("=== Sistema Cesta Justa - Centro Comunitario ===\n\n");
 
     printf("--- Composicao da Familia ---\n");
-    printf("-- Adultos\n-- Idosos\n-- Crianças e/ou adolecentes\n-- Crianças menores que 2 anos\n\n");
+    printf("-- Adultos\n-- Idosos\n-- Criancas e/ou adolescentes\n-- Criancas menores que 2 anos\n\n");
 
     printf("Numero de adultos: ");
     scanf("%d", &adultos);
@@ -39,8 +39,8 @@ int main(void) {
     printf("Numero de idosos: ");
     scanf("%d", &idosos);
 
-    printf("Numero de criancas e/ou adolecentes: ");
-    scanf("%d", &criancas_e_adolecentes);
+    printf("Numero de criancas e/ou adolescentes: ");
+    scanf("%d", &criancas_e_adolescentes);
 
     printf("Numero de criancas menores de 2 anos: ");
     scanf("%d", &criancas_menores);
@@ -58,7 +58,7 @@ int main(void) {
             (adultos * pontos_adultos) 
         +   (idosos * pontos_idosos)
         +   (criancas_menores * pontos_criancas_menores)
-        +   (criancas_e_adolecentes * pontos_criancas_e_adolecentes);
+        +   (criancas_e_adolescentes * pontos_criancas_e_adolescentes);
 
     // Processamento - Calculo dos alimentos basicos
     total_arroz = pontos_familia * cota_arroz;
